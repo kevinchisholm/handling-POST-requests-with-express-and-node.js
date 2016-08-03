@@ -1,0 +1,59 @@
+body {
+   font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
+   font-weight: 300;
+}
+
+article{
+	position: relative;
+	width: 60%;
+	margin: 20px auto;
+	padding: 20px;
+	background-color: #ededed;
+	border-radius: 5px;
+	text-align: center;
+}
+
+h1{
+	font-size: 5.9vw;
+	color: #002366;
+}
+
+nav{
+	position: absolute;
+	top: 10px;
+	right: 10px;
+	padding: 10px;
+	background-color: #002366;
+}
+
+nav a {
+	margin-left: 10px;
+	color: #fff;
+	font-weight: bold;
+}
+
+.textLeft{
+	text-align: left;
+}
+
+.logo{
+	display: block;
+	width: 50%;
+	margin: 20px auto;
+}
+
+.small {
+	width: 20%;
+}
+
+.floatLeft {
+	float: left;
+	margin: 12px 12px 0 0;
+}
+
+@media screen and (max-width : 568px) {
+	nav{
+		position: static;
+	}
+}
+
