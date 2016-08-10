@@ -11,6 +11,9 @@ body {
 	background-color: #ededed;
 	border-radius: 5px;
 	text-align: center;
+	-webkit-box-shadow: 10px 10px 43px -4px rgba(133,126,133,1);
+	-moz-box-shadow: 10px 10px 43px -4px rgba(133,126,133,1);
+	box-shadow: 10px 10px 43px -4px rgba(133,126,133,1);
 }
 
 .home h1, .home h2, .home h3 .home h4 .home h5{
@@ -19,6 +22,11 @@ body {
 
 .home h1{
 	font-size: 5.9vw;
+	color: #002366;
+}
+
+.home h2{
+	font-size: 2.9vw;
 	color: #002366;
 }
 
@@ -34,6 +42,10 @@ body {
 	margin-left: 10px;
 	color: #fff;
 	font-weight: bold;
+}
+
+.home p, .home li {
+	font-size: 22px;
 }
 
 .textLeft{
@@ -66,10 +78,46 @@ form {
 input, label, button{
 	display: block;
 	margin-top: 20px;
+	font-size: 22px;
 }
 
 label{
 	font-weight: bold;
+}
+
+input[type="text"]{
+	height: 32px;
+}
+
+#post-results-container {
+	display: none;
+	clear: both;
+	margin-top: 20px;
+	padding: 20px;
+	border: 1px solid #002366;
+	border-radius: 5px;
+}
+
+#post-results-container .data {
+	margin-top: 20px;
+}
+
+#post-results-container .data li{
+	margin-top: 20px;
+}
+
+#post-results-container .data b{
+	font-weight: bold;
+	margin-right: 10px;
+}
+
+#submitButton{
+	display: inline-block;
+}
+
+.ajaxLoader{
+	display: none;
+	margin-left: 10px;
 }
 
 @media screen and (max-width : 568px) {

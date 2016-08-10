@@ -17,13 +17,15 @@ app.use(express.static(path.join(__dirname, 'www')));
 app.post('/form',function(req, res){
 	res.setHeader('Content-Type', 'application/json');
 
-	console.log(req.body.firstName);
-	console.log(req.body.lastName);
+	//mimic a slow network connection
+	setTimeout(function(){
 
-	res.send(JSON.stringify({
-		firstName: req.body.firstName || null,
-		lastName: req.body.lastName || null
-	}));
+		res.send(JSON.stringify({
+			firstName: req.body.firstName || null,
+			lastName: req.body.lastName || null
+		}));
+
+	}, 1000)
 
 	// res.send(JSON.stringify({a: 1, b: 2}));
 });

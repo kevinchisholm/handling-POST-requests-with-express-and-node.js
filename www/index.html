@@ -16,9 +16,14 @@
                   <input type="text" name="firstName"><br>
                   <label>Last name:</label>
                   <input type="text" name="lastName">
-                  <button type="submit" id="submitButton">Submit</button>
+                  <button type="submit" id="submitButton">Submit</button><img class="ajaxLoader" src="images/ajax-loader.gif">
                 </form>
             </div>
+            <section id="post-results-container">
+              <h2>POST DATA</h2>
+              <p>Here is the data you posted:</p>
+              <ul class="data"></ul>
+            </section>
         </article>
       <script type="text/javascript" src="js/jquery-2.2.4.min.js"></script>
       <script type="text/javascript" src="js/form-handler.js"></script>
