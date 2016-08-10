@@ -21,11 +21,3 @@ What you need to run this app:
 #### Example # 1:
 
 * node example-1.js
-
-#### Example # 2:
-
-* node example-2.js
-
-#### Example # 3:
-
-* node example-3.js
