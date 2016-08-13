@@ -16,8 +16,10 @@ What you need to run this app:
 
 * Clone this repo: git clone https://github.com/kevinchisholm/handling-POST-requests-with-express-and-node.js
 
+* Run this command: **npm install**
+
 ### Running the examples
 
 #### Run the following in your terminal:
 
-* npm start
+* **npm start**
