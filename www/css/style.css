@@ -54,7 +54,7 @@ body {
 
 .logo{
 	display: block;
-	width: 50%;
+	width: 20%;
 	margin: 20px auto;
 }
 
@@ -75,6 +75,10 @@ form {
 	text-align: left;
 }
 
+#testForm {
+	margin-top: 40px;
+}
+
 input, label, button{
 	display: block;
 	margin-top: 20px;
@@ -87,6 +91,7 @@ label{
 
 input[type="text"]{
 	height: 32px;
+	width: 400px;
 }
 
 #post-results-container {
@@ -118,6 +123,10 @@ input[type="text"]{
 .ajaxLoader{
 	display: none;
 	margin-left: 10px;
+}
+
+.nodeLogo {
+	width: 150px2
 }
 
 @media screen and (max-width : 568px) {
