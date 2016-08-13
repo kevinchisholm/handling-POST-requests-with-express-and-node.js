@@ -20,6 +20,6 @@ What you need to run this app:
 
 ### Running the examples
 
-#### Run the following in your terminal:
+* Run the following in your terminal:  **npm start**
 
-* **npm start**
+
