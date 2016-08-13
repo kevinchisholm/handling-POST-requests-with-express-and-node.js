@@ -18,6 +18,6 @@ What you need to run this app:
 
 ### Running the examples
 
-#### Example # 1:
+#### Run the following in your terminal:
 
-* node example-1.js
+* node server.js
