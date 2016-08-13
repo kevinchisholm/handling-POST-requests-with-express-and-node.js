@@ -20,4 +20,4 @@ What you need to run this app:
 
 #### Run the following in your terminal:
 
-* node server.js
+* npm start
