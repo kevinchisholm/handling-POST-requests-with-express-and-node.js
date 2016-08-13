@@ -1,10 +1,10 @@
-//reuire the express nodejs module
+//require the express nodejs module
 var express = require('express'),
 	//set an instance of exress
 	app = express(),
-	//reuire the body-parser nodejs module
+	//require the body-parser nodejs module
 	bodyParser = require('body-parser'),
-	//reuire the path nodejs module
+	//require the path nodejs module
 	path = require("path");
 	
 //support parsing of application/json type post data
