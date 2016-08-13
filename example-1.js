@@ -2,13 +2,16 @@
 var express = require('express'),
 	//set an instance of exress
 	app = express(),
+	//reuire the body-parser nodejs module
+	bodyParser = require('body-parser'),
 	//reuire the path nodejs module
-	path    = require("path");
+	path = require("path");
+	
+//support parsing of application/json type post data
+app.use(bodyParser.json());
 
-var bodyParser = require('body-parser');
-
-app.use(bodyParser.json()); // support json encoded bodies
-app.use(bodyParser.urlencoded({ extended: true })); // support encoded bodies
+//support parsing of application/x-www-form-urlencoded post data
+app.use(bodyParser.urlencoded({ extended: true })); 
 
 //tell express that www is the root of our public web folder
 app.use(express.static(path.join(__dirname, 'www')));
@@ -27,7 +30,8 @@ app.post('/form',function(req, res){
 
 	}, 1000)
 
-	// res.send(JSON.stringify({a: 1, b: 2}));
+	//debugging output for the terminal
+	console.log('you posted: First Name: ' + req.body.firstName + ', Last Name: ' + req.body.lastName);
 });
 
 //wait for a connection
