@@ -18,7 +18,7 @@ What you need to run this app:
 
 * Run this command: **npm install**
 
-### Running the examples
+### Running the example
 
 * Run the following in your terminal:  **npm start**
 
