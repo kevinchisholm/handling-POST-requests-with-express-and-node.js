@@ -1,6 +1,6 @@
 [![Node.Js Connect Logo](http://www.nodejsconnect.com//sites/default/themes/drupalconnect/images/layout/logo-lo.png)](http://www.nodejsconnect.com/)
 
-# TITLE
+# Handling POST requests with Express and Node.js
 
 ## Code Examples for [Node.Js Connect](http://www.nodejsconnect.com/) Blog Post: Handling POST requests with Express and Node.js.
 
