@@ -16,7 +16,7 @@ app.use(bodyParser.urlencoded({ extended: true }));
 //tell express that www is the root of our public web folder
 app.use(express.static(path.join(__dirname, 'www')));
 
-//tell express what to do when the /about route is requested
+//tell express what to do when the /form route is requested
 app.post('/form',function(req, res){
 	res.setHeader('Content-Type', 'application/json');
 
