@@ -1,8 +1,6 @@
-[![Node.Js Connect Logo](http://www.nodejsconnect.com//sites/default/themes/drupalconnect/images/layout/logo-lo.png)](http://www.nodejsconnect.com/)
+[![Node.Js Connect Logo](https://sub1.kevinchisholm.com/blog/images/node-js-logo.png)](https://blog.kevinchisholm.com)
 
 # Handling POST requests with Express and Node.js
-
-## Code Examples for [Node.Js Connect](http://www.nodejsconnect.com/) Blog Post: Handling POST requests with Express and Node.js.
 
 ## Dependencies
 
@@ -14,12 +12,30 @@ What you need to run this app:
 
 ### Setup
 
-* Clone this repo: git clone https://github.com/kevinchisholm/handling-POST-requests-with-express-and-node.js
+* Clone this repo:
 
-* Run this command: **npm install**
+````
+git clone https://github.com/kevinchisholm/handling-POST-requests-with-express-and-node.js.git
+````
 
-### Running the example
+* Run this command:
 
-* Run the following in your terminal:  **npm start**
+````
+npm install
+````
+
+* Run the following in your terminal:
+
+````
+npm start
+````
+
+* Point your browser to: **http://localhost:3000**
+
+* Enter some text in the **First Name** and **Last Name** fields, and then click **Submit**.
+
+* **SUGGESTION** : Open-up your network panel in your browser dev tools and watch the **POST** request go out.
+
+
 
 
