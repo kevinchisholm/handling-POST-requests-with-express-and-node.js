@@ -8,7 +8,7 @@ var express = require('express'),
 	path = require("path");
 var MongoClient = require('mongodb').MongoClient;
 var url = "mongodb://localhost:27017/";
-
+var stu_database;
 
 
 //support parsing of application/json type post data
@@ -78,14 +78,51 @@ app.get('/studentdata', function (req, res) {
   
   dbo.collection("student").find({},{_id:0}).toArray(function(err, result) {
     if (err) throw err;
+    //res.setHeader('Content-Type', 'application/json');
+    //res.send(result);
     console.log(result);
-
-
+    res.setHeader('Content-Type','application/json');
+    stu_database= result;
     db.close();
-  })
-  ;
+  });
+  res.setHeader('Content-Type', 'application/json');
+  res.send(stu_database);
 });
 })
+
+app.post('/student_sorted',function(req, res){
+	res.setHeader('Content-Type', 'application/json');
+	//var myobj = req.body.name;
+	MongoClient.connect(url, function(err, db) {
+  	if (err) throw err;
+  	var dbo = db.db("mydb");
+  	var approx = "/"+req.body.name+"/"
+  	var myobj = {firstName: approx};
+	res.setHeader('Content-Type', 'application/json');
+	console.log(myobj);
+  	dbo.collection("student").find(myobj).toArray(function(err, result) {
+    if (err) throw err;
+    //res.setHeader('Content-Type', 'application/json');
+    //res.send(result);
+    console.log(result);
+    res.setHeader('Content-Type','application/json');
+    res.send(result);
+    db.close();
+  });
+}); 
+	//mimic a slow network connection
+	// setTimeout(function(){
+
+	// 	res.send(JSON.stringify({
+	// 		firstName: req.body.firstName || null,
+	// 		lastName: req.body.lastName || null
+	// 	}));
+
+	// }, 1000)
+
+	//debugging output for the terminal
+	console.log('you posted: Name: ' + req.body.name);
+});
 
 app.listen(3000, function () {
   console.log('Server is running. Point your browser to: http://localhost:3000');
