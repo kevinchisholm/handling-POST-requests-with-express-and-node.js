@@ -9,34 +9,25 @@
     <body class="home"> 
         <article class="textLeft" id="main">
             <img class="logo" src="images/nodejs-logo.png">
-            <h1>Student/Faculty Form</h1>
-            <p>Enter some info and then click "Submit"</p>
+            <h1>Faculty Form</h1>
+            <p>Enter Faculty info and then click "Submit"</p>
             <div>
-                <form method="POST" form action = "/student" id="StudentForm">
+                <form method="POST" action="faculty" id="Facultyform">
+                  <label>Faculty ID:</label>
+                  <input type="text" name="username"><br>
                   <label>First name:</label>
                   <input type="text" name="firstName"><br>
                   <label>Last name:</label>
                   <input type="text" name="lastName">
-                  <button type="submit" id="submitButton" >Student form Submit</button><img class="ajaxLoader" src="images/ajax-loader.gif">
+                  <button type="submit" id="submitButton">Submit</button><img class="ajaxLoader" src="images/ajax-loader.gif">
+                </form>
+                <a href="/index.html"> <h3>For Student, click here</h3></a>
 
-                </form>
-                 <form method="POST" form action = "/faculty" id="FacultyForm">
-                  <label>First name:</label>
-                  <input type="text" name="firstName"><br>
-                  <label>Last name:</label>
-                  <input type="text" name="lastName">
-                  <button type="submit" id="submitButton" >Faculty form Submit</button><img class="ajaxLoader" src="images/ajax-loader.gif">
-                </form>
             </div>
             <section id="post-results-container">
               <h2>POST DATA</h2>
               <p>Here is the data you posted:</p>
               <ul class="data"></ul>
-            </section>
-            <section id="post-results-container2">
-              <h2>POST DATA</h2>
-              <p>Here is the data you posted as Faculty:</p>
-              <ul class="data2"></ul>
             </section>
         </article>
       <script type="text/javascript" src="js/jquery-2.2.4.min.js"></script>
